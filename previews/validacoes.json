@@ -1,0 +1,33 @@
+{
+  "html_local_files_referenced": 18,
+  "missing_files": [],
+  "missing_anchors": [],
+  "damaged_image_files": [],
+  "css_parse_errors": [],
+  "pet_images": {
+    "missao-golden-v6.webp": [
+      916,
+      904
+    ],
+    "diferencial-pets-v6.webp": [
+      1320,
+      655
+    ],
+    "cadastro-bulldog-v6.webp": [
+      1086,
+      756
+    ]
+  },
+  "viewports_without_horizontal_overflow": [
+    320,
+    390,
+    768,
+    1024,
+    1440,
+    1920
+  ],
+  "menu_test": "OK (abriu e fechou)",
+  "form_required_test": "OK (invalid/valid)",
+  "js_console_errors_in_smoke_test": 0,
+  "whatsapp_config": "5551986133553"
+}
