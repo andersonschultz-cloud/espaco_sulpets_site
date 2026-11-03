@@ -1,65 +1,37 @@
-# Espaço Sul Pets — Site Premium V6
+# Espaço Sul Pets — Site Premium V7 (GitHub Pages)
 
-Versão completa e atualizada, preparada para o **GitHub Pages** e sem backend, build, Node.js ou instalação de dependências.
+Site estático, responsivo, sem build nem backend. **O arquivo `index.html` está na raiz do ZIP** para publicação direta no GitHub Pages.
 
-## Novidades da V4
+## Atualizações da V7
 
-- Todas as 7 fotos dos serviços foram substituídas por imagens realistas e nítidas (WebP 900 × 900), ajustadas à proporção dos cartões.
-- Spitz Alemão em destaque com nova imagem nítida.
-- Imagem de missão, bem-estar e formulário atualizadas.
-- Imagem compartilhada em redes sociais atualizada.
-- Identidade roxa preservada, layout responsivo, animação de cachorrinho ao abrir o site.
-- Cadastro com redirecionamento para o WhatsApp (51) 98613-3553, com informações do pet, tutor, contato, serviço e observações.
+- Nova seção **Cuidado para toda a vida**, com faixa ilustrativa de cães de diferentes idades e quatro etapas: filhotes, jovens, adultos e sêniores.
+- Fotos fornecidas pelo proprietário, organizadas em cartões para recreação, banho, movimento e terapias, com WebP otimizado e proporções responsivas.
+- Nova seção **Venha nos conhecer**, com imagem da fachada do Espaço Sul Pets.
+- Endereço completo, CNPJ e botão para buscar a localização no Google Maps, além de WhatsApp.
+- Dados estruturados `VeterinaryCare` (JSON-LD) com localização e identificação empresarial.
+- Preservados serviços, fundador, Missão/Visão/Valores, cadastro com WhatsApp e animação de abertura.
 
-## Como publicar
+## Publicar
 
-1. Extraia o ZIP.
-2. Faça upload **de todos os arquivos e pastas extraídos diretamente para a raiz** de seu repositório GitHub; o `index.html` deve ficar na raiz.
-3. Acesse `Settings > Pages > Build and deployment`.
-4. Escolha `Deploy from a branch`, `main` e `/(root)`; salve.
-5. Abra o link exibido na tela do Pages para conferir o resultado.
+1. Extraia o arquivo ZIP.
+2. Faça upload dos arquivos e pastas **diretamente na raiz do repositório** (não envie tudo dentro de outra pasta).
+3. Em `Settings → Pages`, selecione `Deploy from a branch` → `main` → `/(root)`.
+4. Salve e acesse a URL fornecida pelo GitHub Pages.
 
-Leia `PUBLICAR_NO_GITHUB.md` para detalhes e `MANUTENCAO.md` para alterações futuras.
+## Contato cadastrado
 
-## Estrutura principal
+- **WhatsApp**: +55 51 98613-3553
+- **Endereço**: Avenida Farroupilha, 4314, Casa, Marechal Rondon, Canoas / RS, CEP 92020-476
+- **CNPJ**: 69.548.473/0001-24
 
-```text
-index.html
-404.html
-.nojekyll
-assets/
-  css/style.css
-  js/config.js
-  js/app.js
-  images/*.webp
-previews/galeria-novas-fotos.webp
-PUBLICAR_NO_GITHUB.md
-MANUTENCAO.md
-README.md
-```
+## Manutenção
 
-## Configuração dos contatos
+- Textos e seções: `index.html`.
+- Estilos e responsividade: `assets/css/style.css`.
+- WhatsApp e Instagram: `assets/js/config.js`.
+- Comportamento do menu e formulário: `assets/js/app.js`.
+- Imagens: `assets/images/`.
 
-O WhatsApp e o Instagram são configuráveis em `assets/js/config.js`. A edição dos textos visíveis deve ser feita em `index.html`. O formulário não grava dados em servidor: prepara a mensagem para o usuário confirmar o envio no WhatsApp.
+**Importante:** o cadastro não envia mensagens automaticamente nem armazena informações; ele abre o WhatsApp com texto pré-preenchido para o usuário confirmar o envio. O site não tem sistema de agenda ou armazenamento de dados.
 
-## Observação sobre fotos
-
-As imagens dos pets foram criadas digitalmente para fins de divulgação. Se quiser ilustrar a estrutura ou os pacientes reais da clínica, substitua as fotos por material fotográfico autorizado.
-
-
-## Ajustes V5
-
-- Correção das dimensões e do enquadramento das imagens nas seções **Cadastro** e **Nosso diferencial**.
-- Revisão de responsividade para desktop, tablet e mobile.
-- Validação extra de caminhos de arquivos, HTML e JavaScript.
-
-
-## V6: novo enquadramento da campanha visual
-
-- Missão/Visão/Valores: nova foto do golden retriever ajustada para a coluna direita.
-- Cadastro: nova foto do bulldog francês em uma área com proporção natural e sem cortes.
-- Nosso diferencial: foto de golden retriever e gato em um cartão horizontal, mantendo os animais visíveis.
-- Novos arquivos: `missao-golden-v6.webp`, `cadastro-bulldog-v6.webp`, `diferencial-pets-v6.webp`.
-- Layout adaptativo para smartphones, tablets e desktop.
-
-A imagem do bulldog inclui um balão ilustrado. Os textos das seções são HTML, mantendo seleção e acessibilidade.
+Consulte `PUBLICAR_NO_GITHUB.md`, `MANUTENCAO.md` e `TESTES.md` para detalhes.

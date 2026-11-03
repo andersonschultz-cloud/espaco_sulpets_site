@@ -1,0 +1,35 @@
+{
+  "local_paths_valid": true,
+  "local_paths_checked": 24,
+  "missing_paths": [],
+  "anchors_valid": true,
+  "missing_anchors": [],
+  "images_valid": true,
+  "images_checked": 25,
+  "images_missing_alt": [],
+  "forms_labels_valid": true,
+  "missing_labels": [],
+  "css_parse_errors": 0,
+  "js_syntax": {
+    "app.js": true,
+    "config.js": true
+  },
+  "http_status": {
+    "/": 200,
+    "assets/css/style.css": 200,
+    "assets/js/app.js": 200,
+    "assets/js/config.js": 200,
+    "assets/images/fachada-espaco-sulpets.webp": 200,
+    "assets/images/vida-ciclo-banner.webp": 200,
+    "assets/images/vida-filhotes.webp": 200,
+    "assets/images/vida-rotina.webp": 200,
+    "assets/images/vida-movimento.webp": 200,
+    "assets/images/vida-maturidade.webp": 200
+  },
+  "cnpj_check_digits_valid": true,
+  "business_address_in_schema": "Avenida Farroupilha, 4314, Casa",
+  "whatsapp_number_in_config": true,
+  "lifecycle_cards": 4,
+  "location_section_exists": true,
+  "banner_exists": true
+}

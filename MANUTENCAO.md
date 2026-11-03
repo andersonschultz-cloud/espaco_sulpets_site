@@ -71,3 +71,15 @@ Use um editor de código e teste primeiro no navegador local. Suba os arquivos a
 ## V4 — fotos dos pets
 
 As fotos de serviços ficam em `assets/images/servico-*.webp` (900 × 900). Para não cortar o rosto, use retratos quadrados com o pet centralizado; a exibição usa `object-fit: cover`. As imagens são digitalmente geradas e podem ser trocadas por fotos reais com autorização.
+
+
+## V7 — Localização, CNPJ e ciclo de vida
+
+- **Localização**: edite a seção `id="localizacao"` em `index.html` e o endereço do rodapé.
+- **CNPJ**: altere também o bloco `<script type="application/ld+json">` do HTML, que contém dados estruturados para mecanismos de busca.
+- **Botão de mapa**: atualize a URL do Google Maps na seção localização ao mudar o endereço.
+- **Novas imagens**: os arquivos `fachada-espaco-sulpets.webp`, `vida-ciclo-banner.webp`, `vida-ciclo-mobile.webp`, `vida-filhotes.webp`, `vida-rotina.webp`, `vida-movimento.webp` e `vida-maturidade.webp` ficam em `assets/images/`.
+- **Proporções**: a fachada conserva formato vertical, e os cartões de vida usam 3:2. No mobile o banner mostra um recorte fotográfico próprio e o texto da mensagem aparece em HTML.
+- **Cuidados clínicos**: textos institucionais não substituem uma avaliação veterinária.
+
+As fotografias e imagens de divulgação são arquivos fornecidos pelo solicitante ou produzidos para a campanha; verifique direitos de uso e adequação da representação do estabelecimento antes da publicação.

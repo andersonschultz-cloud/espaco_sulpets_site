@@ -55,3 +55,10 @@ git push origin main
 **As alterações não aparecem:** atualize o navegador sem cache e confira se as mudanças já foram publicadas.
 
 **O número mudou:** altere `assets/js/config.js` e também o número visível no `index.html`.
+
+
+## Atualização V7
+
+A publicação da V7 adiciona uma nova seção de localização e uma seção de ciclo de vida, sem exigir banco de dados, servidor ou compilação. Faça o upload dos **arquivos extraídos** para a raiz do repositório e substitua os arquivos com mesmo nome. O arquivo principal continua sendo `index.html`.
+
+Após a publicação, abra o site tanto no computador como no celular e confirme que o botão **Ver rota no Google Maps** leva à rua correta e que o **WhatsApp** abre com a mensagem de teste. O envio da mensagem depende da confirmação do cliente no aplicativo.
