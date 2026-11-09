@@ -16,7 +16,7 @@
 5. Verifique que `index.html` está diretamente na raiz, no mesmo nível da pasta `assets`.
 6. Clique em **Commit changes**.
 
-**ATENÇÃO:** confira se o arquivo `index.html` aparece diretamente na raiz do repositório; não envie uma pasta de nível extra. O ZIP V6 já está preparado com os arquivos na raiz ao descompactar.
+**ATENÇÃO:** confira se o arquivo `index.html` aparece diretamente na raiz do repositório; não envie uma pasta de nível extra. O ZIP V8 já está preparado com os arquivos na raiz ao descompactar.
 
 ## 3. Ativar GitHub Pages
 
@@ -57,8 +57,8 @@ git push origin main
 **O número mudou:** altere `assets/js/config.js` e também o número visível no `index.html`.
 
 
-## Atualização V7
+## Atualização V8
 
-A publicação da V7 adiciona uma nova seção de localização e uma seção de ciclo de vida, sem exigir banco de dados, servidor ou compilação. Faça o upload dos **arquivos extraídos** para a raiz do repositório e substitua os arquivos com mesmo nome. O arquivo principal continua sendo `index.html`.
+A versão atual mantém a seção de localização e a seção de ciclo de vida, e atualiza a animação do cachorro e o telefone de atendimento, sem exigir banco de dados, servidor ou compilação. Faça o upload dos **arquivos extraídos** para a raiz do repositório e substitua os arquivos com mesmo nome. O arquivo principal continua sendo `index.html`.
 
-Após a publicação, abra o site tanto no computador como no celular e confirme que o botão **Ver rota no Google Maps** leva à rua correta e que o **WhatsApp** abre com a mensagem de teste. O envio da mensagem depende da confirmação do cliente no aplicativo.
+Após a publicação, abra o site tanto no computador como no celular e confirme que o botão **Ver rota no Google Maps** leva à rua correta e que o **WhatsApp (51) 99304-9408** abre com a mensagem de teste. O envio da mensagem depende da confirmação do cliente no aplicativo.

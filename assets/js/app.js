@@ -1,6 +1,6 @@
 'use strict';
 (() => {
-  const cfg = window.SULPETS_CONFIG || { whatsapp: '5551986133553' };
+  const cfg = window.SULPETS_CONFIG || { whatsapp: '5551993049408' };
   const urlBase = `https://wa.me/${String(cfg.whatsapp).replace(/\D/g, '')}`;
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   document.querySelectorAll('[data-whatsapp]').forEach(el => el.setAttribute('href', urlBase));
@@ -27,13 +27,25 @@
   });
 
   const form = document.querySelector('#petForm');
+  const contatoField = document.getElementById('contatoTutor');
+  contatoField.addEventListener('input', () => contatoField.setCustomValidity(''));
   form.addEventListener('submit', ev => {
     ev.preventDefault();
+    // Limpa validações anteriores caso o telefone tenha sido preenchido automaticamente.
+    contatoField.setCustomValidity('');
     if (!form.reportValidity()) return;
     const val = id => document.getElementById(id).value.trim();
     const nomePet = val('nomePet');
     const tutor = val('nomeTutor');
     const contato = val('contatoTutor');
+    const telefone = document.getElementById('contatoTutor');
+    const numeroDigitado = contato.replace(/\D/g, '');
+    // Evita abrir uma mensagem de atendimento com telefone incompleto.
+    if (numeroDigitado.length < 10 || numeroDigitado.length > 13) {
+      telefone.setCustomValidity('Informe um telefone válido com DDD.');
+      telefone.reportValidity();
+      return;
+    }
     const servico = val('tipoServico');
     const observacoes = val('observacoes');
     const texto = [
@@ -64,12 +76,15 @@
   if (prefersReducedMotion || seen) {
     hidePreloader();
   } else {
-    window.addEventListener('load', () => {
+    const concludeLoading = () => {
       window.setTimeout(() => {
         hidePreloader();
         try { sessionStorage.setItem('sulpets_preloaded', '1'); } catch (_) {}
       }, 1450);
-    }, { once: true });
+    };
+    if (document.readyState === 'complete') concludeLoading();
+    else window.addEventListener('load', concludeLoading, { once: true });
+    // Fallback: mesmo com imagens externas lentas, a tela nunca bloqueia o site.
     window.setTimeout(hidePreloader, 3600);
   }
 })();

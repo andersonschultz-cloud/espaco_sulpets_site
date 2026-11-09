@@ -43,9 +43,10 @@ As imagens estão em `assets/images/`, principalmente em formato WebP. Você pod
 - `spitz-hero.webp`: foto circular do Spitz Alemão na capa.
 - `logo.webp`: marca da clínica.
 - `servico-*.webp`: fotos dos sete serviços.
-- `missao-pet.webp`: imagem da seção de valores.
-- `form-pet.webp`: pet que ilustra o formulário.
-- `pets-carinho.webp`: imagem do bloco final.
+- `missao-golden-v6.webp`: golden retriever da seção de valores.
+- `cadastro-bulldog-v6.webp`: cachorro ao lado do cadastro.
+- `diferencial-pets-v6.webp`: cão e gato na seção Nosso Diferencial.
+- `fachada-espaco-sulpets.webp`: fotografia externa do estabelecimento.
 - `favicon.png`: ícone do navegador.
 
 Para evitar cortes indesejados, use fotos com um assunto centralizado. Recomendação: WebP de boa qualidade, em torno de 600–1200 pixels de largura.
@@ -83,3 +84,8 @@ As fotos de serviços ficam em `assets/images/servico-*.webp` (900 × 900). Para
 - **Cuidados clínicos**: textos institucionais não substituem uma avaliação veterinária.
 
 As fotografias e imagens de divulgação são arquivos fornecidos pelo solicitante ou produzidos para a campanha; verifique direitos de uso e adequação da representação do estabelecimento antes da publicação.
+
+
+### Direção do cachorro na tela de carregamento
+
+A regra `.running-dog__body` espelha horizontalmente apenas o emoji, para ele olhar para a direita. O `@keyframes dog-run` desloca o contêiner da esquerda para a direita continuamente durante o carregamento. **Não remova o `scaleX(-1)`** ao modificar a animação. O script mantém um tempo-limite de segurança para não travar a página.

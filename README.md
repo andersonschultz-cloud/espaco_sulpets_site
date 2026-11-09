@@ -1,4 +1,4 @@
-# Espaço Sul Pets — Site Premium V7 (GitHub Pages)
+# Espaço Sul Pets — Site Premium V8 (GitHub Pages)
 
 Site estático, responsivo, sem build nem backend. **O arquivo `index.html` está na raiz do ZIP** para publicação direta no GitHub Pages.
 
@@ -20,7 +20,7 @@ Site estático, responsivo, sem build nem backend. **O arquivo `index.html` est�
 
 ## Contato cadastrado
 
-- **WhatsApp**: +55 51 98613-3553
+- **WhatsApp**: +55 51 99304-9408
 - **Endereço**: Avenida Farroupilha, 4314, Casa, Marechal Rondon, Canoas / RS, CEP 92020-476
 - **CNPJ**: 69.548.473/0001-24
 
@@ -35,3 +35,14 @@ Site estático, responsivo, sem build nem backend. **O arquivo `index.html` est�
 **Importante:** o cadastro não envia mensagens automaticamente nem armazena informações; ele abre o WhatsApp com texto pré-preenchido para o usuário confirmar o envio. O site não tem sistema de agenda ou armazenamento de dados.
 
 Consulte `PUBLICAR_NO_GITHUB.md`, `MANUTENCAO.md` e `TESTES.md` para detalhes.
+
+
+## Atualização V8 (09/11/2026)
+
+- O cachorro da tela de carregamento agora olha para a direita enquanto atravessa a página da esquerda para a direita.
+- Número oficial do WhatsApp atualizado para **(51) 99304-9408** (link `https://wa.me/5551993049408`) no site, configuração e metadados.
+- Links e recursos estáticos revisados; testes da V8 documentados em `TESTES.md`.
+
+## Verificação opcional após editar
+
+Se você tiver Node.js instalado, execute `node tests/smoke.cjs` na raiz da pasta do site. O teste não envia mensagens reais: simula o menu, a validação do formulário, o contato e o encerramento do loading.
